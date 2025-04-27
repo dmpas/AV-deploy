@@ -8,7 +8,6 @@ artifacts:
 - path: artifact.txt
   name: artifact.txt
 deploy:
-deploy:
   provider: Webhook
   url:
   - secure: OMGP9R1895abhSAril6yAqZ6JBQDXJQ5k0Gz7MBBHuC0ry1wLuPyIbbvwSIng8123oqL87jOvs+X1FaaYab7Lg==
