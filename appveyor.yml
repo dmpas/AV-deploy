@@ -1,5 +1,6 @@
 version: 1.2.3.{build}
 image:
+  - macos
   - Ubuntu2204
   - Visual Studio 2022
 build_script:
@@ -11,4 +12,6 @@ deploy:
   provider: Webhook
   url:
     secure: OMGP9R1895abhSAril6yAqZ6JBQDXJQ5k0Gz7MBBHuC0ry1wLuPyIbbvwSIng8123oqL87jOvs+X1FaaYab7Lg==
+  authorization:
+    secure: mOYmIK7sZDIWSIRnN3gTg4CeGQer1BT9ZWWf3pJJPN7nJPqAlJXVyvmvAOV9vg0m0VAbUfbaSGbC2ierOkVvzQ==
   request_timeout: 5
