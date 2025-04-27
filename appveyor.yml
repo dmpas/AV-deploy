@@ -3,6 +3,27 @@ image:
   - macos
   - Ubuntu2204
   - Visual Studio 2022
+for:
+-
+  matrix:
+    only:
+      - image: Visual Studio 2022
+  environment:
+    DEPLOY_PLATFORM_ID: WIN
+for:
+-
+  matrix:
+    only:
+      - image: macos
+  environment:
+    DEPLOY_PLATFORM_ID: osx
+for:
+-
+  matrix:
+    only:
+      - image: Ubuntu2204
+  environment:
+    DEPLOY_PLATFORM_ID: ubuntu22
 build_script:
 - echo building...
 artifacts:
