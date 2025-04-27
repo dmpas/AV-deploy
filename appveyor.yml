@@ -1,0 +1,15 @@
+version: 1.2.3.{build}
+image:
+  - Ubuntu2204
+  - Visual Studio 2022
+build_script:
+- echo building...
+artifacts:
+- path: artifact.txt
+  name: artifact.txt
+deploy:
+deploy:
+  provider: Webhook
+  url:
+  - secure: OMGP9R1895abhSAril6yAqZ6JBQDXJQ5k0Gz7MBBHuC0ry1wLuPyIbbvwSIng8123oqL87jOvs+X1FaaYab7Lg==
+  request_timeout: 5
