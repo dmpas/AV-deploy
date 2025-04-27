@@ -10,14 +10,12 @@ for:
       - image: Visual Studio 2022
   environment:
     DEPLOY_PLATFORM_ID: WIN
-for:
 -
   matrix:
     only:
       - image: macos
   environment:
     DEPLOY_PLATFORM_ID: osx
-for:
 -
   matrix:
     only:
